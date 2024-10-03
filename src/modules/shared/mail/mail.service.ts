@@ -3,7 +3,6 @@ import { JwtService } from '@nestjs/jwt';
 import { Transporter, createTransport } from 'nodemailer';
 import { createOTP, GenerateOTP, verifiedOTP } from 'src/helpers/mail.hepler';
 import { UserService } from 'src/modules/user/user.service';
-import crypto from 'crypto'
 
 @Injectable()
 export class MailService {
